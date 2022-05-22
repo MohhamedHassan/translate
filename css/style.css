@@ -13154,11 +13154,11 @@ table {
     }
 }
 .cstm-rtl a.nav-link,.cstm-rtl h2 {
-    font-family: 'Noto Kufi Arabic', sans-serif !important;
+   
 }
 
 .cstm-rtl {
- 
+    /* font-family: 'Noto Kufi Arabic', sans-serif !important; */
     direction: rtl !important;
     text-align: right !important;
 }
@@ -13202,9 +13202,21 @@ table {
     right: auto !important;
     left: 20px !important;
 }
+.cstm-rtl .car-box-3 .facilities-list li {
 
-
-
+    float: right !important;
+    margin-right: 0 !important;
+    margin-left: 20px !important;
+}
+.cstm-rtl .car-box-3 .ratings {
+    padding-left: 0px !important;
+    padding-right: 25px !important;
+    float: right !important;
+}
+.cstm-rtl .testimonial-info {
+    direction: rtl;
+    text-align: right;
+}
 
 
 
