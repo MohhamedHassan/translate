@@ -196,15 +196,15 @@ if (document.getElementById('homepage')) {
             AwardsWinning.innerHTML = 'Awards Winning'
             ourblog.innerHTML = `Our <span>Blog</span>`
             ourblogname1.innerHTML=`Maria Blank`
-            ourblogtitle1.innerHTML=`Selling Your Real House`
-            ourblogtext1.innerHTML=`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`
+            ourblogtitle1.innerHTML=`rental car`
+            ourblogtext1.innerHTML=`Rent a car that travels with you from one city to another`
             footertext.innerHTML=`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`
             ourblogname2.innerHTML=`Brandon Miller`
-            ourblogtitle2.innerHTML=`Find Your Dream Car`
-            ourblogtext2.innerHTML=`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`
+            ourblogtitle2.innerHTML=`Short trip rental`
+            ourblogtext2.innerHTML=`Renting a car for a period of hours saves you`
             ourblogname3.innerHTML=`Brandon Miller`
-            ourblogtitle3.innerHTML=`Find Your Dream Car`
-            ourblogtext3.innerHTML=`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`
+            ourblogtitle3.innerHTML=`car rental`
+            ourblogtext3.innerHTML=`Choose from more than 400 cars of various specifications`
         }
 
     }
