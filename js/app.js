@@ -363,7 +363,7 @@ $(function () {
         animationSpeed: 200,
         scrollTrigger: false,
         scrollTarget: false,
-        scrollText: '<i class="fa fa-play"> App store</i>',
+        scrollText: '<i class="fa fa-apple""> App store</i>',
         scrollTitle: false,
         scrollImg: false,
         activeOverlay: false,

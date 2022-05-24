@@ -21,7 +21,8 @@ if (document.getElementById('homepage')) {
     let FeaturedCar = document.getElementById('FeaturedCar')
     let forrent = document.getElementsByClassName('forrent')
     let Featuredl = document.getElementById('Featuredl')
-    langtext.innerHTML = localStorage.getItem('carsLang') == 'AR' ? 'EN' : 'AR'
+    langtext.innerHTML = localStorage.getItem('carsLang') == 'AR' ? '<img style="width:20px" src="img/usa.png">' : '<img style="width:20px" src="img/s.png">'
+    langtexttow.innerHTML = localStorage.getItem('carsLang') == 'AR' ? '<img style="width:20px" src="img/usa.png">' : '<img style="width:20px" src="img/s.png">'
     let kiagrandcerato = document.getElementById('kiagrandcerato')
     let newcarl = document.getElementsByClassName('newcarl')
     let Automaticl = document.getElementsByClassName('Automaticl')
@@ -123,34 +124,19 @@ if (document.getElementById('homepage')) {
             AwardsWinning.innerHTML = 'الحائز على الجوائز'
             ourblog.innerHTML = `مدونتنا`
             ourblogname1.innerHTML=`ماريا بلانك `
-            ourblogtitle1.innerHTML=`بيع منزلك الحقيقي
-            `
-            ourblogtext1.innerHTML=` إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت
-
-            نيولا باراياتيور.
-            
-            كيو أوفيسيا ديسيريونتموليت انيم أيدي ايس`
+            ourblogtitle1.innerHTML=`تأجير سيارة  `
+            ourblogtext1.innerHTML=` اختار بين اكثر من ٤٠٠ سيارة بمختلف الموصفات`
             footertext.innerHTML=` إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت
 
             نيولا باراياتيور.
             
             كيو أوفيسيا ديسيريونتموليت انيم أيدي ايس`
-            ourblogname2.innerHTML=`براندون ميلر `
-            ourblogtitle2.innerHTML=`ابحث عن سيارة أحلامك
-            `
-            ourblogtext2.innerHTML=` إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت
-
-            نيولا باراياتيور.
-            
-            كيو أوفيسيا ديسيريونتموليت انيم أيدي ايس`
+            ourblogname2.innerHTML=` `
+            ourblogtitle2.innerHTML=`تأجير رحلات قصيرة `
+            ourblogtext2.innerHTML=` تأجير السياره لمدة ساعات اوفر لك`
             ourblogname3.innerHTML=`براندون ميلر `
-            ourblogtitle3.innerHTML=`ابحث عن سيارة أحلامك
-            `
-            ourblogtext3.innerHTML=` إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت
-
-            نيولا باراياتيور.
-            
-            كيو أوفيسيا ديسيريونتموليت انيم أيدي ايس`
+            ourblogtitle3.innerHTML=`تأجير رحلات الى المدن `
+            ourblogtext3.innerHTML=` اجر سيارة تسافر معك من مدينة الى مدينة اخرى`
             
         } else {
            
@@ -225,7 +211,7 @@ if (document.getElementById('homepage')) {
     typesofcar() 
 }
 if (document.getElementById('aboutpage')) {
-   let WELCOMETOFOLLTANK = document.getElementById('WELCOMETOFOLLTANK')
+   let WELCOMETOFoltank = document.getElementById('WELCOMETOFoltank')
    let aboutfirsttext = document.getElementById('aboutfirsttext')
    let aboutsecondtext= document.getElementById('aboutsecondtext')
    let wearethebest= document.getElementById('wearethebest')
@@ -249,9 +235,8 @@ if (document.getElementById('aboutpage')) {
     if (lang == 'AR') {
        
        
-        WELCOMETOFOLLTANK.innerHTML = 'مرحبا بك في فل تانك'
-        aboutfirsttext.innerHTML = `اشن يللأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . ديواس
-        نيولا باراياتيور. أيكس`
+        WELCOMETOFoltank.innerHTML = 'مرحبا بك في فل تانك'
+        aboutfirsttext.innerHTML = `فل تانك تمنحك فرصه تأجير سياره بدون سائق اونلاين او تأجير سياره بسائق.`
         aboutsecondtext.innerHTML = `اشن يللأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . ديواس
         نيولا باراياتيور. أيكس`  
         wearethebest.innerHTML=`نحن  <span>الافضل </span>`
@@ -279,8 +264,8 @@ if (document.getElementById('aboutpage')) {
          `      
     } else {
        
-        WELCOMETOFOLLTANK.innerHTML = 'Welcome To Foltank'
-        aboutfirsttext.innerHTML = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur maxime alias enim non porro molestias illum quas repellat sapiente laborum!'
+        WELCOMETOFoltank.innerHTML = 'Welcome To Foltank'
+        aboutfirsttext.innerHTML = 'Full tank gives you the opportunity to rent a car without a driver online or rent a car with a driver.'
         aboutsecondtext.innerHTML = `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur maxime alias enim non porro molestias illum quas repellat sapiente laborum!` 
         wearethebest.innerHTML=`We Are <span>The Best</span>`
         wearethebest1.innerHTML= `Highly Secured`
@@ -786,40 +771,38 @@ if (document.getElementById('servicePage')) {
     let welcome3 = document.getElementById('welcome3')
     function setLang(lang) {
      if (lang == 'AR') {
-         welcome1.innerHTML=  `ذات صباح ، عندما استيقظ جريجور سامسا من أحلام مضطربة ، وجد نفسه متحولًا في سريره إلى حشرات مروعة. كان مستلقيًا على ظهره الذي يشبه الدروع ، وإذا رفع رأسه قليلاً يمكنه ذلك
-         `
-         welcome2.innerHTML=  `
-         عندما استيقظ جريجور سامسا من أحلام مضطربة ، وجد نفسه يتحول في سريره إلى حشرات مروعة. كان مستلقيًا على ظهره الذي يشبه الدروع ، وإذا رفع رأسه قليلاً يمكنه أن يرى نفسه قد تغير.`
-         welcome3.innerHTML=  `في الصباح ، عندما استيقظ جريجور سامسا من أحلام مضطربة ، وجد نفسه متحولًا في سريره إلى حشرات مروعة. كان مستلقيًا على ظهره الذي يشبه الدروع ، وإذا رفع رأسه قليلاً يمكنه رؤية نفسه.`
+         welcome1.innerHTML=  `تطبيق فل تانك لمشاركه وتاجير السيارات بين الافراد وايضا تقديم خدمات المشاوير والرحلات الطويله `
+         welcome2.innerHTML=  `يمكنك الاختيار من بين مءات السيارات حسب السعر او المكان وايضا نوع السياره المفضل لك.`
+         welcome3.innerHTML=  ` `
         WELCOMETOSERVICECENTER.innerHTML='مرحبا بك في مركز الخدمات'
         totalcars.innerHTML = 'أجمالي السيارات'
         DealerReviews.innerHTML = 'مراجعات التجار'
         HappyClients.innerHTML = 'عملاء سعداء '
         AwardsWinning.innerHTML = 'الحائز على الجوائز'
-         service1.innerHTML= `دعم مجاني        `
-     servicetext1.innerHTML=' إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت'
-      service2.innerHTML=`سريع جدا      `
-     servicetext2.innerHTML=' إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت'
-     service3.innerHTML=`إصلاح`
-     servicetext3.innerHTML=' إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت'
-     service4.innerHTML=`تكيف`
-     servicetext4.innerHTML=' إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت'
-     service5.innerHTML=`تغيير زيت     `
-     servicetext5.innerHTML=' إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت'
-     service6.innerHTML=`إصلاح المحرك     `
-     servicetext6.innerHTML=' إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت'
-     service7.innerHTML=`وكالة`
-     servicetext7.innerHTML=' إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت'
-     service8.innerHTML=`حماية`
-     servicetext8.innerHTML=' إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت'
+         service1.innerHTML= ` تأجير سيارة         `
+     servicetext1.innerHTML='اختار بين اكثر من ٤٠٠ سيارة بمختلف الموصفات'
+      service2.innerHTML=` تأجير رحلات قصيرة      `
+     servicetext2.innerHTML=' تأجير السياره لمدة ساعات اوفر لك'
+     service3.innerHTML=`تأجير رحلات الى المدن`
+     servicetext3.innerHTML=' اجر سيارة تسافر معك من مدينة الى مدينة اخرى'
+     service4.innerHTML=`العروض المستمرة`
+     servicetext4.innerHTML=' العروض المستمرة التى تكون على التطبيق تحفزك لتأجير'
+     service5.innerHTML=` تأجير بسائق     `
+     servicetext5.innerHTML=' امكانية تأجير السيارة بسائق ويوصلك اة مكان'
+     service6.innerHTML=` تأجير بدون سائق     `
+     servicetext6.innerHTML=' امكانية تأجير السيارة بدون سائق اكثر من يوم والتمتع بها كما تحتاج'
+     service7.innerHTML=`الربح من خلال التطبيق     `
+     servicetext7.innerHTML=' امكانية الربح من سيارتك والاستثمار بها'
+     service8.innerHTML=`الحماية`
+     servicetext8.innerHTML=' حمايتك وحماية السيارة من الاهم المعايير عندنا'
         Array.from(readmorel).forEach(i => {
             i.innerHTML = 'المزيد...'
         })
         ourservice.innerHTML = 'خدماتنا'
         ourservicetext.innerHTML = ' إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت'
      } else {
-        welcome1.innerHTML=  `One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could`
-        welcome2.innerHTML=  `When Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see himself transformed.`
+        welcome1.innerHTML=  `Full Tank application for sharing and renting cars between individuals, as well as providing ride services and long trips`
+        welcome2.innerHTML=  `You can choose from hundreds of cars according to the price or location and also the type of car you prefer.`
         welcome3.innerHTML=  `morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see himself.`
         Array.from(readmorel).forEach(i => {
             i.innerHTML = 'Read more...'
@@ -831,22 +814,22 @@ if (document.getElementById('servicePage')) {
         AwardsWinning.innerHTML = 'Awards Winning'
         ourservice.innerHTML = 'Our Services'
         ourservicetext.innerHTML = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod'
-        service1.innerHTML= `Free Support`
-        servicetext1.innerHTML=`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt Lorem ipsum dolor sit amet`
-         service2.innerHTML=`Super Fast`
-        servicetext2.innerHTML=`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt Lorem ipsum dolor sit amet`
-        service3.innerHTML=`Repairing`
-        servicetext3.innerHTML=`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt Lorem ipsum dolor sit amet`
-        service4.innerHTML=`AIR conditioning`
-        servicetext4.innerHTML=`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt Lorem ipsum dolor sit amet`
-        service5.innerHTML=`Oil Change`
-        servicetext5.innerHTML=`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt Lorem ipsum dolor sit amet`
-        service6.innerHTML=`Engine Repair`
-        servicetext6.innerHTML=`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt Lorem ipsum dolor sit amet`
-        service7.innerHTML=`Dealership`
-        servicetext7.innerHTML=`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt Lorem ipsum dolor sit amet`
-        service8.innerHTML=`Security`
-        servicetext8.innerHTML=`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt Lorem ipsum dolor sit amet`
+        service1.innerHTML= `rental car        `
+        servicetext1.innerHTML=`Choose from more than 400 cars of various specifications`
+         service2.innerHTML=`Short trip rental`
+        servicetext2.innerHTML=`Renting a car for a period of hours saves you`
+        service3.innerHTML=`Renting trips to cities`
+        servicetext3.innerHTML=`Rent a car that travels with you from one city to another`
+        service4.innerHTML=`Ongoing offers`
+        servicetext4.innerHTML=`The continuous offers that are on the application motivate you to rent`
+        service5.innerHTML=`Chauffeured rental`
+        servicetext5.innerHTML=`Possibility to rent a car with a driver and take you anywhere`
+        service6.innerHTML=`driverless rental`
+        servicetext6.innerHTML=`The possibility of renting a car without a driver for more than one day and enjoying it as you need`
+        service7.innerHTML=`Earning through the app`
+        servicetext7.innerHTML=`Possibility to profit from your car and invest in it`
+        service8.innerHTML=`protection`
+        servicetext8.innerHTML=`Protecting you and your car is one of our most important standards`
      }
  
  }
@@ -950,8 +933,8 @@ function coomonLang(lang){
 
     let pagesl = document.getElementById('pagesl')
   
-    langtext.innerHTML = localStorage.getItem('carsLang') == 'AR' ? 'EN' : 'AR'
-    langtexttow.innerHTML = localStorage.getItem('carsLang') == 'AR' ? 'EN' : 'AR'
+    langtext.innerHTML = localStorage.getItem('carsLang') == 'AR' ? '<img style="width:20px" src="img/usa.png">' : '<img style="width:20px" src="img/s.png">'
+    langtexttow.innerHTML = localStorage.getItem('carsLang') == 'AR' ? '<img style="width:20px" src="img/usa.png">' : '<img style="width:20px" src="img/s.png">'
   
     let carlisting = document.getElementById('carlisting')
     let elements = document.getElementById('elements')
@@ -1037,7 +1020,8 @@ if(!document.getElementById('notfound')) {
 function selectLang() {
     if (currentLang == 'AR') {
         currentLang = 'EN'
-        langtext.innerHTML = 'AR'
+        langtext.innerHTML =  '<img style="width:20px" src="img/s.png">' 
+        langtexttow.innerHTML =  '<img style="width:20px" src="img/s.png">'
         localStorage.setItem('carsLang', 'EN')
         if(!document.getElementById('notfound')) {
             coomonLang("EN")
@@ -1048,7 +1032,8 @@ function selectLang() {
     }
     else {
         currentLang = 'AR'
-        langtext.innerHTML = 'EN'
+        langtext.innerHTML =  '<img style="width:20px" src="img/usa.png">' 
+        langtexttow.innerHTML =  '<img style="width:20px" src="img/usa.png">'
         localStorage.setItem('carsLang', 'AR')
         if(!document.getElementById('notfound')) {
 

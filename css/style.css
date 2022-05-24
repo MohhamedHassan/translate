@@ -13217,7 +13217,9 @@ table {
     direction: rtl;
     text-align: right;
 }
-
+.nav-link.h-icon {
+    display: none !important;
+}
 
 
 
