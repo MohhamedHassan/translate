@@ -13220,7 +13220,7 @@ table {
 .nav-link.h-icon {
     display: none !important;
 }
-
+#page_scroller {display: none !important}
 
 
 
